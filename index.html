@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>InShare</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://esquilo.io/png/thumb/Go6vfXhyke4Cvi3-Folder-Transparent-PNG.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="nav">
+      <img class="logo" src="logo.png" alt="">
+      <div class="nav-items">
+        <span class="h">HOME</span>
+        <span class="u">USAGE</span>
+        <span class="c">CONTACT</span>
+        <span class="l">YOUR LINKS</span>
+      </div>
+    </div>
+    <div class="theme-switch-wrapper">
+      <span id="toggle-icon">
+          <span class="toggle-text">Light Mode</span>
+          <i class="fas fa-sun toggle-fa"></i>
+      </span>
+      <label class="theme-switch">
+          <input type="checkbox">
+          <div class="slider round"></div>
+      </label>
+    </div>
+    <section class="home">
+    <div class="outer"  data-aos="flip-left"  data-aos-duration="2000">
+      <div class="inner drop-zone">
+        <div class="icon-container">
+        <i class="fas fa-file left"></i>
+        <i class="fas fa-file middle"></i>
+        <i class="fas fa-file right"></i>
+        </div>
+        <input type="file" class="fileInput" name="" value="">
+        <div class="browse-text">
+          <p class="text">Drop your files here or , <span class="browseBtn"> browse</span></p>
+        </div>
+      </div>
+      <div class="uploader">
+        <div class="text-container">
+          <p>Uploading...</p>
+          <p style="font-size:12px" class="percent"></p>
+          <div class="progression"></div>
+        </div>
+        <div class="progress">
+        </div>
+      </div>
+      <p class="copy" style="display:none">Copy Link</p>
+      <div class="i1 input-container">
+        <input type="text" class="fileURL" value="sdannceabcdjabkvjadbkvjbvwvdeihahbcububcqabvhihniqealbviawbnvaeibicibivk" readonly>
+        <i class="fas fa-copy copy-icon"></i>
+      </div>
+        <p class="or" style="display:none">OR</p>
+        <div class="email-box">
+          <p >Send Email</p>
+          <div class="email-container">
+            <form action="" class="email-form">
+            <div class="address-container">
+              <label for="from">Email From:</label>
+              <input id="from"type="email" name="email-from" required>
+            </div>
+            <div class="address-container">
+              <label for="to">Email to:</label>
+              <input id="to"type="email" required name="email-to">  
+            </div>
+            <button type="submit">Send</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    
+    <div class="image"data-aos="flip-right"  data-aos-duration="2000">
+      <img class="main-img"src="light.svg" alt="">
+    </div>
+  </section>
+    <section class="link">
+      <h1>Your Links</h1>
+      <div class="link-container">
+          <div class="inner-border">
+          <ul>
+              <li class="table-title">Name</li>
+              <li class="table-title">Download Link</li>
+          </ul>
+          <div class="links">
+          <!-- <ul>
+              <li>file.png</li>
+              <li class="input-container2">  
+                  <input type="text" class="fileURL2" value="https://file-share/heroku/files/send" readonly>
+                  <i class="fas fa-copy copy-icon"></i>
+              </li>
+              <button class="delete-button">DELETE</button>
+          </ul>-->
+        </div>
+          </div>
+      </div> 
+    </section>
+    <section class="usage">
+      <div class="step1">
+        <img src="/usage/1.png" alt="">
+        <div class="content">
+          <h1>STEP 1</h1>
+          <span>Here you can browse or drop your files.Just click on browse button as shown in image or drag and drop the file in this section</span>
+        </div>
+      </div>
+      <div class="step2">
+        <div class="content">
+          <h1>STEP 2</h1>
+          <span>Now you can copy the generated link and send it to your friend/family 
+            OR
+            Directly send the link via email</span>
+        </div>
+        <img src="/usage/2.png" alt="">
+      </div>
+      <div class="step3">
+        <img src="/usage/3.png" alt="">
+        <div class="content">
+          <h1>STEP 3</h1>
+          <span>After opening the link one can easily download that file by clicking on download button.  
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <i class="sm fab fa-linkedin"></i>
+      <i class="sm fab fa-instagram"></i>
+      <i class="sm fab fa-github"></i>
+      <i class="sm fab fa-facebook"></i>
+    </section>
+    <div class="toast">Sample message</div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js">  
+    </script>
+  </body>
+</html>
