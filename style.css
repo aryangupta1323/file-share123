@@ -131,14 +131,18 @@ section.home,section.link{
 }
 .dragged{
   background-color: var(--main-color);
- border: 4px dashed var(--secondary-color);
+  border: 4px dashed var(--secondary-color);
 }
 .fileInput{
   display:none;
 }
-.text{
+/* .text{
  position:relative;
  top:80px;
+} */
+.browse-text{
+  position:absolute;
+  bottom: 10px;
 }
 span.browseBtn{
   color: var(--secondary-color);
@@ -196,6 +200,7 @@ span.browseBtn{
    color:var(--font-color);
    background-color: var(--main-color);
    border: none;
+   font-size: ;
  }
  .fileURL:focus{
   outline:none;
@@ -291,7 +296,7 @@ span.browseBtn{
   position: relative;
   top: -4px;
   right: 5px;
-  color: var(--font-color);
+  color: white;
 }
 
 .theme-switch {
@@ -366,6 +371,7 @@ h1{
   font-size: 5rem;
   margin-bottom:0;
 }
+
 .link-container{
 margin:50px auto;
 background-color:var(--box-color);
@@ -545,12 +551,88 @@ color:#bc1888 ;
 .contact i:hover{
  cursor:pointer;
 }
-@media only screen and (max-width: 1000px ) {
-  /* .outer{
-    transform:scaleX(2) scaleY(2); 
-  } */
+@media only screen and (max-width: 1025px ) {
+  .outer{
+    min-height: 400px;
+    min-width:300px;
+    width: 90vw;
+  }
+  .inner {
+    height: 380px;
+  }
+  .fa-file {
+    font-size: 150px;
+    color: var(--secondary-color);
+    position: absolute;
+    transform-origin: bottom;
+    transition: transform 1s ease-in;
+  }
+  .nav-items{
+    margin-right:200px;
+   }
+   .browse-text{
+     position:absolute;
+     bottom: 30px;
+   }
+   .text{
+     font-size:40px;
+   }
+   .link-container{
+    width:90vw;
+    margin:35% auto;
+   }
+   .link h1{
+     transform: scale(1.5);
+     margin-top: 300px;
+   }
   .image{
     display:none;
+  }
+  .toggle-text {
+    position: absolute;
+    width: 100px;
+    top: -20px;
+    right: -30px;
+    color: rgb(235, 225, 225);
+  }
+  .toggle-fa {
+    font-size: 30px;
+    margin-right: 15px;
+    position: absolute;
+    top: 5px;
+  } 
+  section.usage{
+    display:none;
+  }
+  .fileURL{
+    font-size: 35px;
+  }
+  .table-title{
+    font-size: 60px;
+  }
+  .fileURL2{
+    font-size: 35px;
+  }
+  .links li:first-child{
+    font-size: 30px;
+  }
+  .copy-icon,.copy-icon2{
+    font-size: 2rem;
+  }
+  .delete-button{
+    font-size: 20px;
+  }
+  .nav .nav-items .u{
+    display: none;
+  }
+  section.contact{
+    flex-direction: column;
+  }
+  .contact a{
+    margin-bottom: 30px;
+  }
+  .sm{
+    font-size: 17rem;
   }
   }
 
