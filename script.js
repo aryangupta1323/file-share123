@@ -171,10 +171,10 @@ function fetchLinks() {
     linkArray = JSON.parse(localStorage.getItem("links"))
   }
    else {
-    link = [{
+    let link = {
       name: "Example File",
       url: "https://example.com"
-    }]
+    }
     linkArray.push(link)
     localStorage.setItem("links", JSON.stringify(linkArray))
   }
@@ -184,6 +184,7 @@ fetchLinks();
 function buildLinks() {
   const container=document.querySelector(".links");
   container.textContent="";
+  console.log(linkArray)
   linkArray.forEach((link) => {
     const {
       name,
@@ -266,10 +267,10 @@ const home=document.querySelector("section.home")
 const link=document.querySelector("section.link")
 const usage = document.querySelector("section.usage")
 const contact =document.querySelector("section.contact")
-const linkButton=document.querySelector("span.l")
-const homeButton=document.querySelector("span.h")
-const usageButton=document.querySelector("span.u")
-const contactButton=document.querySelector("span.c")
+const linkButton=document.querySelector("a.l")
+const homeButton=document.querySelector("a.h")
+const usageButton=document.querySelector("a.u")
+const contactButton=document.querySelector("a.c")
 linkButton.addEventListener("click",()=>{
   home.style.display="none"
   usage.style.display="none"

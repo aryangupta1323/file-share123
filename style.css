@@ -28,7 +28,7 @@ body {
   height:inherit;
 }
 /*           *******                NAVIGATION BAR                ******           */
-.nav{
+/* .nav{
   position:fixed;
   z-index: 10;
   top:0px;
@@ -38,11 +38,18 @@ body {
   display:flex;
   justify-content: space-between;
   align-items:center;
+} */
+.navbar-dark .navbar-nav .nav-link{
+ color:var(--secondary-color);
 }
-.nav-items{
- margin-right:400px;
+.nav-item{
+  margin: 0 20px;
 }
-.nav-items span{
+.nav-item a{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* .nav-items span{
   margin:10px;
   color:var(--box-color);
   font-family: 'Roboto', sans-serif;
@@ -51,14 +58,13 @@ body {
   background-color:var(--secondary-color);
   border-radius:10px;
   padding:10px 20px;
-}
-.nav-items span:hover{
+} */
+/* .nav-items span:hover{
   cursor: pointer;
-}
+} */
 .logo{
-  width:200px;
-  height:190px;
-  margin-top:20px;
+  width:150px;
+  /* margin-top:20px; */
 }
 section.home,section.link{
   height:100vh;
@@ -281,7 +287,7 @@ span.browseBtn{
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-  z-index: 100;
+  z-index: 1031;
   position: fixed;
   right: 25px;
   top: 30px;
@@ -622,7 +628,7 @@ color:#bc1888 ;
   .delete-button{
     font-size: 20px;
   }
-  .nav .nav-items .u{
+  a.u{
     display: none;
   }
   section.contact{
@@ -632,7 +638,10 @@ color:#bc1888 ;
     margin-bottom: 30px;
   }
   .sm{
-    font-size: 17rem;
+    font-size: 10rem;
+  }
+  .sm.fa-linkedin{
+    margin-top: 150px;
   }
   }
 
