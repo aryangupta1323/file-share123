@@ -199,7 +199,8 @@ function buildLinks() {
     const inputBox=document.createElement("input");
     inputBox.classList.add("fileURL2");
     inputBox.setAttribute('type',"text");
-    inputBox.setAttribute('value',`${JSON.parse(url).file}`);
+    let gen_url=JSON.parse(url).file;
+    inputBox.setAttribute('value',gen_url);
     // inputBox.setAttribute('value',`${url}`);
     inputBox.readOnly=true;
     const icon=document.createElement('i');
