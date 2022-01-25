@@ -190,6 +190,7 @@ function buildLinks() {
       name,
       url
     } = link;
+    // console.log(name,url)
     const nameNew=name.split(".");
     const ul = document.createElement('ul');
     const firstLi=document.createElement('li');
@@ -199,8 +200,10 @@ function buildLinks() {
     const inputBox=document.createElement("input");
     inputBox.classList.add("fileURL2");
     inputBox.setAttribute('type',"text");
-    let gen_url=JSON.parse(url).file;
-    inputBox.setAttribute('value',gen_url);
+    let arr_link=url.split('"')
+    console.log(arr_link[3])
+    // let gen_url=JSON.parse(url).file;
+    inputBox.setAttribute('value',arr_link[3]);
     // inputBox.setAttribute('value',`${url}`);
     inputBox.readOnly=true;
     const icon=document.createElement('i');
